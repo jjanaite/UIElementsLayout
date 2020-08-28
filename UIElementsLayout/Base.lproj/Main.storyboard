@@ -52,6 +52,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="leftBottonButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTO-ry-I6a"/>
                                     <action selector="touchDragInsideTapped:" destination="BYZ-38-t0r" eventType="touchDragInside" id="OuV-kS-aNV"/>
                                 </connections>
                             </button>
@@ -119,6 +120,27 @@
                                     <constraint firstAttribute="height" constant="169.5" id="3bQ-di-jsd"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCl-uB-6SJ">
+                                <rect key="frame" x="100" y="263" width="120" height="42"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="M30-Oh-zuo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="v5q-Tg-ofF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="Left Button">
+                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRU-On-boQ"/>
+                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Jo8-qc-ceq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -134,9 +156,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Fq-cX-5s7" secondAttribute="bottom" constant="59" id="Xg2-0e-L12"/>
                             <constraint firstItem="osh-NZ-6M8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="Y7B-Pp-GxG"/>
                             <constraint firstItem="gs2-cA-HpT" firstAttribute="leading" secondItem="2Ce-0w-gC8" secondAttribute="trailing" constant="19" id="YGa-fX-m7O"/>
+                            <constraint firstItem="TCl-uB-6SJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZRL-ON-bLN"/>
                             <constraint firstItem="cy3-P0-uW2" firstAttribute="height" secondItem="7Fq-cX-5s7" secondAttribute="height" id="ajQ-67-EYx"/>
                             <constraint firstItem="gs2-cA-HpT" firstAttribute="top" secondItem="gd5-fd-Cgd" secondAttribute="bottom" constant="29" id="bEi-En-iBt"/>
                             <constraint firstItem="osh-NZ-6M8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cUU-4K-vDc"/>
+                            <constraint firstItem="TCl-uB-6SJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dts-lT-Msz"/>
                             <constraint firstItem="gd5-fd-Cgd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30.5" id="eMO-Hq-SnR"/>
                             <constraint firstItem="cy3-P0-uW2" firstAttribute="width" secondItem="7Fq-cX-5s7" secondAttribute="width" id="hV6-EH-ZCQ"/>
                             <constraint firstItem="7Fq-cX-5s7" firstAttribute="top" secondItem="2Ce-0w-gC8" secondAttribute="bottom" constant="25" id="lQX-mv-nVl"/>

@@ -74,8 +74,12 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.green
     }
     
-    func changeTextLable(){
-        self.myLable.text = "HomeWork"
+    func changeTextLable(with message: String){
+        let text = message
+        myLable.text = text
+        myLable.backgroundColor = UIColor.gray
+        mainImageView.image = UIImage(systemName: "mic")
+        
     }
     
 //MARK:- IBAction for three more buttons
@@ -94,12 +98,18 @@ class ViewController: UIViewController {
     @IBAction func touchUpInsideTapped(_ sender: Any) {
         print("touchUpInsideTapped")
         changeButtonImageThree(with: "home.png")
-        changeTextLable()
     }
     
     @IBAction func touchUpOutsideTapped(_ sender: Any) {
          print("touchUpOutsideTapped")
         changeButtonImageFour(with: "star.png")
+    }
+    
+    @IBAction func leftBottonButtonTapped(_ sender: Any) {
+        changeTextLable(with: "leftBottonButtonTapped")
+    }
+    
+    @IBAction func testButton(_ sender: Any) {
     }
     
 }
